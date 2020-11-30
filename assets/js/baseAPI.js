@@ -5,7 +5,7 @@ $.ajaxPrefilter(function(options) {
         }
     }
     options.url = 'http://ajax.frontend.itheima.net' + options.url;
-    complete = function(res) {
+    options.complete = function(res) {
         console.log(res);
         if (res.responseJSON.status !== 0 && res.responseJSON.message !== '获取用户基本信息成功！') {
             localStorage.removeItem('token');
