@@ -39,7 +39,7 @@ $(function() {
             success: function(res) {
                 console.log(res);
                 if (res.status !== 0) return layui.layer.msg(res.message);
-                localStorage.setItem('bigthing', res.token);
+                localStorage.setItem('token', res.token);
                 location.href = 'index.html'
             }
         })
