@@ -1,5 +1,13 @@
 $(function() {
-    getuserinfo()
+    getuserinfo();
+    $('#closedd').on('click', function() {
+        layer.confirm('确定退出吗?', { icon: 3, title: '提示' }, function(index) {
+            //do something
+            localStorage.removeItem('token');
+            location.href = 'login.html';
+            layer.close(index);
+        });
+    })
 })
 
 function getuserinfo() {
@@ -9,7 +17,8 @@ function getuserinfo() {
         success: function(res) {
             if (res.status !== 0) return layui.layer.msg('获取数据失败');
             xr(res);
-        }
+        },
+
     })
 }
 
