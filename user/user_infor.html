@@ -14,23 +14,24 @@
     <div class="layui-card">
         <div class="layui-card-header">更改资料</div>
         <div class="layui-card-body">
-            <form class="layui-form" action="">
+            <form class="layui-form" lay-filter="formlist">
+                <input type="text" name="id" style="display: none;">
                 <div class="layui-form-item">
                     <label class="layui-form-label">登录名称</label>
                     <div class="layui-input-block">
-                        <input type="text" name="title" required lay-verify="required" placeholder="请输入登录名称" autocomplete="off" class="layui-input">
+                        <input type="text" name="username" required lay-verify="required" placeholder="请输入登录名称" autocomplete="off" class="layui-input" readonly>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label">登录昵称</label>
                     <div class="layui-input-block">
-                        <input type="text" name="title" required lay-verify="required" placeholder="请输入登录昵称" autocomplete="off" class="layui-input">
+                        <input type="text" name="nickname" required lay-verify="required" placeholder="请输入登录昵称" autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label">登录邮箱</label>
                     <div class="layui-input-block">
-                        <input type="text" name="title" required lay-verify="required" placeholder="请输入登录邮箱" autocomplete="off" class="layui-input">
+                        <input type="text" name="email" required lay-verify="required" placeholder="请输入登录邮箱" autocomplete="off" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
@@ -43,5 +44,9 @@
         </div>
     </div>
 </body>
+<script src="/assets/lib/jquery.js"></script>
+<script src="/assets/lib/layui/layui.all.js"></script>
+<script src="/assets/js/baseAPI.js"></script>
+<script src="/assets/js/user/user_infor.js"></script>
 
 </html>
