@@ -9,7 +9,7 @@ $.ajaxPrefilter(function(options) {
         console.log(res);
         if (res.responseJSON.status !== 0 && res.responseJSON.message !== '获取用户基本信息成功！') {
             localStorage.removeItem('token');
-            location.href = 'login.html';
+            location.href = '/login.html';
         }
     }
 })

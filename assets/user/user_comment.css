@@ -8,3 +8,7 @@ body {
     background-color: #ccc;
     padding: 20px;
 }
+
+.layui-form-item {
+    width: 500px;
+}
