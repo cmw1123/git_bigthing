@@ -49,7 +49,7 @@ $(function() {
                     return layui.layer.msg('更换头像失败！')
                 }
                 layui.layer.msg('更换头像成功！')
-                window.parent.getUserInfo()
+                window.parent.getuserinfo()
             }
         })
     })
